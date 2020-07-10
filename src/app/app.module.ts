@@ -1,39 +1,50 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule, CUSTOM_ELEMENTS_SCHEMA, NO_ERRORS_SCHEMA } from '@angular/core';
-
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import { CommonModule } from '@angular/common';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { AppMatModule } from './app-mat.module';
+
+import { AngularSplitModule } from 'angular-split';
+import { ColorPickerModule } from 'ngx-color-picker';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
-import {MatToolbarModule} from '@angular/material/toolbar';
-import {MatIconModule} from '@angular/material/icon';
-import {MatButtonModule} from '@angular/material/button';
-
-
+import { LayoutLoguedComponent } from './layout-logued/layout-logued.component';
+import { ReportComponent } from './report/report.component';
+import { LeftRulerComponent } from './report/left-ruler/left-ruler.component';
+import { TopRulerComponent } from './report/top-ruler/top-ruler.component';
+import { SectionComponent } from './report/section/section.component';
+import { LeftSideComponent } from './layout-logued/left-side/left-side.component';
+import { InputComponent } from './report/controls/input/input.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    LayoutLoguedComponent,
+    ReportComponent,
+    LeftRulerComponent,
+    TopRulerComponent,
+    LeftSideComponent,
+    SectionComponent,
+    InputComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
+    CommonModule,
+    AngularSplitModule.forRoot(),
+    ColorPickerModule,
+  
+    AppRoutingModule, 
     BrowserAnimationsModule,
-
-
-
-    MatToolbarModule,
-    MatIconModule,
-    MatButtonModule,
-
+    AppMatModule
   ],
-  providers: [],
-  bootstrap: [
-    AppComponent,
+  providers: [
+   
   ],
   exports:[
+    LeftSideComponent,
+    InputComponent
   ],
-  schemas: [NO_ERRORS_SCHEMA, CUSTOM_ELEMENTS_SCHEMA ]
-
+  bootstrap: [AppComponent],
+  schemas:[CUSTOM_ELEMENTS_SCHEMA]
 })
 export class AppModule { }

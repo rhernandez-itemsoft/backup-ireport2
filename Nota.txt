@@ -1,0 +1,36 @@
+Splits para el resize de los panels:  https://www.npmjs.com/package/angular-split
+    npm i angular-split
+            import { AngularSplitModule } from 'angular-split';
+            imports: [
+                AngularSplitModule.forRoot(),
+            ]
+
+LocalStorage:  https://github.com/cyrilletuzi/angular-async-local-storage
+    ng add @ngx-pwa/local-storage@9.0.3
+
+
+ColorPicker: https://www.npmjs.com/package/ngx-color-picker
+    npm install ngx-color-picker --save
+            import { ColorPickerModule } from 'ngx-color-picker';
+            imports:[
+                ColorPickerModule,
+            ]
+    
+Angular Material
+    ng add @angular/material@9.2.4
+
+
+
+quedando como sigue:
+    declarations: [
+        AppComponent,
+        HomeComponent,
+        TopSideComponent
+    ],
+    imports: [
+        BrowserModule,
+        AngularSplitModule.forRoot(),
+        ColorPickerModule,
+        AppRoutingModule,
+        BrowserAnimationsModule,
+    ],

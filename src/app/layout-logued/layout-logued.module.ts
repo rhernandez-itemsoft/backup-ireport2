@@ -1,25 +1,31 @@
-import { NgModule,NO_ERRORS_SCHEMA, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import { NgModule,CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { LayoutLoguedRoutingModule } from './layout-logued-routing.module';
+//import { AppMatModule } from '../app-mat.module';
 
-import { ReportComponent } from 'src/app/report/report.component';
-import { LeftSideComponent } from 'src/app/layout-logued/left-side/left-side.component';
+import { LayoutLoguedRoutingModule } from './layout-logued-routing.module';
+import { LayoutLoguedComponent } from './layout-logued.component';
+import { LeftSideComponent } from './left-side/left-side.component';
+import { TopSideComponent } from './top-side/top-side.component';
 
 
 @NgModule({
-  exports:[
-  ],
-  declarations:[
-    
+  declarations: [
+     //LeftSideComponent, 
+     TopSideComponent
   ],
   imports: [
     CommonModule,
     LayoutLoguedRoutingModule,
   ],
-  bootstrap: [
+  exports:[
+   
   ],
-  schemas: [NO_ERRORS_SCHEMA, CUSTOM_ELEMENTS_SCHEMA ]
-
+  providers:[
+    
+  ],
+  schemas:[
+    
+  ]
 })
 export class LayoutLoguedModule { }

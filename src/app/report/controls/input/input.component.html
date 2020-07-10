@@ -1,1 +1,19 @@
-<p>input works!</p>
+<div id="textarea" class="idrag"
+    
+    [cdkDragDisabled]="cancelDropped"
+    [cdkDragBoundary]="'.'+container"
+    cdkDrag
+    (click)="onClick();"
+    (mousemove)="mouseover($event)"
+    
+    (cdkDragStarted)="onDragStart()"
+    (cdkDragEnded)="onDragEnded($event)" 
+
+    [ngStyle]="properties.style"
+
+    [cdkDragFreeDragPosition]="dragPosition"
+
+>
+ {{properties.data }} 
+
+</div>

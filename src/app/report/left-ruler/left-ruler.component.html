@@ -1,0 +1,14 @@
+<div *ngFor="let mark of marks"  class="pipe" >
+    <div *ngIf="mark.showNumber" class="pipe-brake" [class]="mark.style"  >
+        <div class="pipe-line" [class]="activeStyle" ></div>
+    </div>
+    
+    <div *ngIf="options.unit.value == 'in' && mark.showNumber"  [class]="mark.style" class="pipe-large number" ><div class="clearfix label" >{{ mark.number/16 }}</div></div>
+    <div *ngIf="options.unit.value == 'cm' && mark.showNumber"  [class]="mark.style" class="pipe-large number" ><div class="clearfix label" [class]="activeStyle" >{{ mark.number/10 }}</div></div>
+    <div *ngIf="options.unit.value == 'mm' && mark.showNumber"  [class]="mark.style" class="pipe-large number" ><div class="clearfix label">{{ mark.number }}</div></div>
+    <div *ngIf="options.unit.value == 'px' && mark.showNumber"  [class]="mark.style" class="pipe-large number" ><div class="clearfix label">{{ mark.number * 10}}</div></div>
+    
+    <div *ngIf="!mark.showNumber" [class]="mark.style" >
+        <div class="pipe-line" [class]="activeStyle" ></div>
+    </div>
+</div> 

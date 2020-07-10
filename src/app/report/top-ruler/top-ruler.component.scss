@@ -1,0 +1,161 @@
+div.ruler{
+    width: max-content;
+    margin-left: 43px;
+    // display: inline-block;
+    height: 2rem;
+    
+  }
+  
+  .pipe-large {
+    clear: both;
+    display: inline-block;
+    .pipe-container-large {
+      padding: 0px;
+      margin: 0px;
+      float: left;
+  
+      .draw-line {
+        width: 1px;
+        height: 2rem;
+        background-color: #000;
+      }
+    }
+  
+    .pipe-container-right {
+      height: 2rem;
+      float: left;
+  
+      .pipe-container-number {
+        height: 1rem;
+        float: left;
+  
+        .draw-line {
+          font-size: 7pt;
+        }
+      }
+  
+      .pipe-container-bottom {
+        float: left;
+  
+        .pipe-container-line {
+          float: left;
+  
+          .pipe-small {
+            width: 1px;
+            height: 0.5rem;
+            margin-top: 0.5rem;
+            background-color: #000;
+          }
+  
+          .pipe-medium {
+            width: 1px;
+            height: 1rem;
+            background-color: #000;
+          }
+        }
+      }
+    }
+  }
+  
+  
+  
+  
+  
+  .pipe-large.pipe-in {
+    width: 25.4mm;
+  
+    .pipe-container-large {
+      width: 1.6mm;
+    }
+  
+    .pipe-container-right {
+      width: 23.75mm;
+  
+      .pipe-container-number {
+        width: 23.75mm;
+      }
+  
+      .pipe-container-bottom {
+        width: 24mm;
+  
+        .pipe-in {
+          width: 1.6mm;
+        }
+      }
+    }
+  }
+  
+  
+  .pipe-large.pipe-cm {
+    width: 10mm;
+  
+    .pipe-container-large {
+      width: 1mm;
+    }
+  
+    .pipe-container-right {
+      width: 9mm;
+  
+      .pipe-container-number {
+        width: 9mm;
+      }
+  
+      .pipe-container-bottom {
+        width: 9mm;
+  
+        .pipe-cm {
+          width: 1mm;
+        }
+      }
+    }
+  }
+  
+  
+  
+  .pipe-large.pipe-mm {
+    width: 10mm;
+  
+    .pipe-container-large {
+      width: 1mm;
+    }
+  
+    .pipe-container-right {
+      width: 9mm;
+  
+      .pipe-container-number {
+        width: 9mm;
+      }
+  
+      .pipe-container-bottom {
+        width: 9mm;
+  
+        .pipe-mm {
+          width: 1mm;
+        }
+      }
+    }
+  }
+  
+  .pipe-large.pipe-px {
+    width: 100px;
+  
+    .pipe-container-large {
+      width: 10px;
+    }
+  
+    .pipe-container-right {
+      width: 90px;
+  
+      .pipe-container-number {
+        width: 90px;
+      }
+  
+      .pipe-container-bottom {
+        width: 90px;
+  
+        .pipe-px {
+          width: 10px;
+        }
+      }
+    }
+  }

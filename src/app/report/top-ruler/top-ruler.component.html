@@ -1,0 +1,19 @@
+
+<div class="ruler" >
+    <div *ngFor="let itemLarge of pipeLarge" [class]="itemLarge.unit+ ' ' +itemLarge.type"  >
+        <div class="pipe-container-large" >
+            <div class="draw-line" ></div>
+        </div>
+        <div class="pipe-container-right" >
+            <div class="pipe-container-number">
+                <div class="draw-line">{{ itemLarge.number}}</div>
+            </div>
+
+            <div class="pipe-container-bottom" > 
+                <div *ngFor="let itemSmall of pipeSmall" [class]="itemSmall.unit" class="pipe-container-line" >
+                    <div [class]="itemSmall.type" ></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

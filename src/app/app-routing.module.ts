@@ -1,8 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { ReportComponent } from 'src/app/report/report.component';
-import { LeftSideComponent } from 'src/app/layout-logued/left-side/left-side.component';
 
 const routes: Routes = [
   {
@@ -12,9 +10,6 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  declarations:[
-    
-  ],
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })

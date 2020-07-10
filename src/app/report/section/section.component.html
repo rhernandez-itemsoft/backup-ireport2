@@ -1,1 +1,12 @@
-<p>section works!</p>
+<div class="block" (click)="activateThis();" [attr.id]="sectionName">
+  <div class="left-ruler">
+    <app-left-ruler [activeStyle]="activeStyle"></app-left-ruler>
+  </div>
+  <mat-card class="rpt-container ">
+    <div class="rpt-container-{{sectionName}}" style="width:100%; height:100%;" #container id="container"
+      (click)="onClick($event);">
+
+    </div>
+  </mat-card>
+  <div class="vertical-text">{{ label }}</div>
+</div>

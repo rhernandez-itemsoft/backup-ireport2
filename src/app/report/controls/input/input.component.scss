@@ -1,0 +1,39 @@
+.idrag {
+    // -moz-appearance: textfield-multiline;
+    -webkit-appearance: textarea;
+    border: 1px solid #bcbdbf;
+    // font: medium -moz-fixed;
+    // font: -webkit-small-control;
+  
+    overflow: auto;
+    padding: 2px;
+    resize: both;
+  
+     overflow: hidden;
+  
+    min-width: 1rem !important;
+    min-height: 1rem !important;
+
+    // opacity: 0.7;
+    position: absolute;
+    // left:0px;
+    // top:0px;
+  }
+
+  .idrag {
+    cursor: pointer;
+    // text-align: center;
+    // left: 0px;
+    // top: 0px;
+    background-color: #fff;
+    // width: 5rem; //fit-content
+    // height: 1.5rem;
+   
+  }
+
+  .idrag:hover{
+    cursor: move;
+    cursor: grab;
+    cursor: -moz-grab;
+    cursor: -webkit-grab;
+  }

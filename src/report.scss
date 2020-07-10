@@ -1,0 +1,76 @@
+.as-split-gutter {
+    border: 1px solid #bcbdbf;
+    background: #ffffff !important;
+    overflow: hidden;
+  }
+  as-split-area {
+    overflow: hidden !important;
+  }
+
+
+
+  .sheet-container {
+    .block {
+      display: flex;
+  
+      .left-ruler {
+        background-color: #ffffff;
+      }
+  
+      .rpt-container {
+        width: 21.6cm;
+        height: 3cm;
+        margin-left: 10px;
+      }
+    }
+  }
+  
+
+
+.mat-button-toggle-icons mat-button-toggle .mat-button-toggle-button .mat-button-toggle-label-content{
+    line-height: .5rem !important;
+    padding: 0.25rem !important;
+}
+.mat-button-toggle-icons.no-cheked .mat-button-toggle .mat-button-toggle-button{
+  background-color: #ffffff;
+}
+
+.vertical-divider{
+  margin-left: 1px !important;
+  margin-right: 1px !important;
+}
+.vertical-divider-inset{
+  display: inline-block !important;
+}
+
+.my-icon{
+  background-size: 1.5rem;
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+.icon-font-color{
+  background-image: url(/assets/icons/font-color.png);
+}
+.icon-text-highlight{
+  background-image: url(/assets/icons/Text-HighlightColor-icon.png);
+}
+
+.icon-profile{
+  background-image: url(/assets/icons/profile.svg);
+}
+
+.icon-datasource{
+  background-image: url(/assets/icons/datasource.svg);
+}
+
+.icon-page-options{
+  background-image: url(/assets/icons/page-options.svg);
+}
+
+.icon-download{
+  background-image: url(/assets/icons/download.svg);
+}
+.icon-preview{
+  background-image: url(/assets/icons/preview.svg);
+}

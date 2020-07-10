@@ -1,0 +1,129 @@
+
+
+.pipe {
+    max-width: 2rem;
+  }
+  
+  .pipe-brake {
+    height: 1mm;
+    width: 2rem;
+    
+    float: left;
+    display: flex;
+    //align-items: center;
+  }
+  .pipe-brake.pipe-in{
+    height: .0625in;
+  }
+  .pipe-brake.pipe-cm{
+    height: 1mm;
+  }
+  .pipe-brake.pipe-mm{
+    height: 1mm;
+  }
+  .pipe-brake.pipe-px{
+    height: 10px;
+  }
+  
+  
+  .pipe-large.number {
+    width: 1rem;
+    
+    float: left;
+    //align-items: unset;
+  }
+  
+  .pipe-large.number.pipe-in{
+    height: .9in;
+  }
+  .pipe-large.number.pipe-cm{
+    height: 9mm;
+  }
+  .pipe-large.number.pipe-mm{
+    height: 9mm;
+  }
+  .pipe-large.number.pipe-px{
+    height: 90px;
+  }
+  .pipe-large.number .label {
+    font-size: 7pt;
+    display: block;
+    line-height: 0.5rem;
+    height: 1rem;
+    width: auto;
+    text-align: right;
+    min-width: 0.9rem;
+  }
+  
+  
+  
+  
+  .pipe-medium {
+    width: 1rem;
+    float: left;
+    display: flex;
+    //align-items: center;
+  }
+  
+  .pipe-small {
+    width: 0.5rem;
+    margin-left: 0.5rem;
+    float: left;
+    display: flex;
+    //align-items: center;
+  }
+  
+  .pipe-medium.pipe-in{
+    height: .0625in;
+  }
+  .pipe-medium.pipe-cm{
+    height: 1mm;
+  }
+  .pipe-medium.pipe-mm{
+    height: 1mm;
+  }
+  .pipe-medium.pipe-px{
+    height: 10px;
+  }
+  
+  .pipe-small.pipe-in{
+    height: .0625in;
+  }
+  .pipe-small.pipe-cm{
+    height: 1mm;
+  }
+  .pipe-small.pipe-mm{
+    height: 1mm;
+  }
+  .pipe-small.pipe-px{
+    height: 10px;
+  }
+  
+  
+  
+  
+  
+  
+  
+  .pipe-line {
+    height: 1px;
+    width: 100%;
+    background-color: #000000;
+  }
+  
+  
+  
+  .pipe-line.inactive{
+      background-color: #ecedef;
+  }
+  .pipe-line.active{
+    background-color: #000000;
+  }
+  
+  .pipe-large.number .label.inactive{
+    color: #ecedef;
+  }
+  
+  .pipe-large.number .label.active{
+    color: #000000;
+  }
