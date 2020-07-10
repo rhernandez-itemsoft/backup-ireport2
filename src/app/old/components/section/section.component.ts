@@ -1,10 +1,10 @@
 import {  Component,  OnInit,  Input,  Output,  ComponentFactoryResolver,  ApplicationRef,  Injector,  Type, EventEmitter} from '@angular/core';
-import { SheetSectionService } from 'src/app/services/sheetSection.service';
-import { SheetOptionsService } from 'src/app/services/sheetOptionsService';
-import { ControlsService } from 'src/app/services/controlsService';
-import { CtrlAttached } from 'src/app/models/CtrlAttached';
+import { SheetSectionService } from 'src/app/old/services/sheetSection.service';
+import { SheetOptionsService } from 'src/app/old/services/sheetOptionsService';
+import { ControlsService } from 'src/app/old/services/controlsService';
+import { CtrlAttached } from 'src/app/old/models/CtrlAttached';
 
-import { ControlsBase } from 'src/app/base/controls.base';
+import { ControlsBase } from 'src/app/old/base/controls.base';
 
 @Component({
   selector: 'app-section',

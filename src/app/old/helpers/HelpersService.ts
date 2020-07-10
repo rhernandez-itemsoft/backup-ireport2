@@ -1,5 +1,5 @@
 
-import { PositionXY } from 'src/app/models/positionxy';
+import { PositionXY } from 'src/app/old/models/positionxy';
 
 export class HelpersService {
   constructor() { }

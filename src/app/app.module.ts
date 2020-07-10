@@ -8,13 +8,13 @@ import { AppMatModule } from './app-mat.module';
 import { AngularSplitModule } from 'angular-split';
 import { ColorPickerModule } from 'ngx-color-picker';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { LayoutLoguedComponent } from './layout-logued/layout-logued.component';
-import { ReportComponent } from './report/report.component';
-import { LeftRulerComponent } from './report/left-ruler/left-ruler.component';
-import { TopRulerComponent } from './report/top-ruler/top-ruler.component';
-import { SectionComponent } from './report/section/section.component';
-import { LeftSideComponent } from './layout-logued/left-side/left-side.component';
-import { InputComponent } from './report/controls/input/input.component';
+import { LayoutLoguedComponent } from './components/layout-logued/layout-logued.component';
+import { ReportComponent } from './components/report/report.component';
+import { LeftRulerComponent } from './components/report/left-ruler/left-ruler.component';
+import { TopRulerComponent } from './components/report/top-ruler/top-ruler.component';
+import { SectionComponent } from './old/components/section/section.component';
+import { LeftSideComponent } from './components/layout-logued/left-side/left-side.component';
+import { InputComponent } from './components/report/controls/input/input.component';
 
 @NgModule({
   declarations: [

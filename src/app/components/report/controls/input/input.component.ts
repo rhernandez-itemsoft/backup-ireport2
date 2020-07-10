@@ -1,8 +1,8 @@
 import { Component, OnInit,Input,Output, EventEmitter,ChangeDetectorRef } from '@angular/core';
-import { Ctrl, CtrlLabel, CtrlInput, CtrlImage, CtrlTable, CtrlChart, CtrlBarCode } from 'src/app/models/ctrl-object';
-import { PositionXY } from 'src/app/models/positionxy';
-import { HelpersService } from 'src/app/helpers/HelpersService';
-import { ControlsService } from 'src/app/services/controlsService';
+import { Ctrl, CtrlLabel, CtrlInput, CtrlImage, CtrlTable, CtrlChart, CtrlBarCode } from 'src/app/old/models/ctrl-object';
+import { PositionXY } from 'src/app/old/models/positionxy';
+import { HelpersService } from 'src/app/old/helpers/HelpersService';
+import { ControlsService } from 'src/app/old/services/controlsService';
 
 @Component({
   selector: 'app-input',

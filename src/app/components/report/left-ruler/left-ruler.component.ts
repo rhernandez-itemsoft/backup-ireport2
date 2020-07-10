@@ -1,6 +1,6 @@
 import {  Component,  OnInit,  Input,  EventEmitter,  OnChanges,  SimpleChanges,  SimpleChange,} from '@angular/core';
-import {  RptOptions,  RptUnit,  RptSize,  RptOrientation,} from 'src/app/models/options';
-import { PositionXY } from 'src/app/models/positionxy';
+import {  RptOptions,  RptUnit,  RptSize,  RptOrientation,} from 'src/app/old/models/options';
+import { PositionXY } from 'src/app/old/models/positionxy';
 
 
 const  STYLE_MARK ="";

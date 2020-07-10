@@ -7,12 +7,12 @@ import {
   } from '@angular/core';
 
 import { BehaviorSubject, Observable, Subject } from 'rxjs';
-import { Ctrl, CtrlLabel, CtrlInput, CtrlImage, CtrlTable, CtrlChart, CtrlBarCode } from 'src/app/models/ctrl-object';
-import { CtrlObjStyles } from 'src/app/models/ctrl-obj-styles';
+import { Ctrl, CtrlLabel, CtrlInput, CtrlImage, CtrlTable, CtrlChart, CtrlBarCode } from 'src/app/old/models/ctrl-object';
+import { CtrlObjStyles } from 'src/app/old/models/ctrl-obj-styles';
 import { InputComponent } from 'src/app/report/controls/input/input.component';
-import { CtrlAttached } from 'src/app/models/CtrlAttached';
-import { HtmlContainer } from 'src/app/models/HtmlContainer';
-import { ControlsService } from 'src/app/services/controlsService';
+import { CtrlAttached } from 'src/app/old/models/CtrlAttached';
+import { HtmlContainer } from 'src/app/old/models/HtmlContainer';
+import { ControlsService } from 'src/app/old/services/controlsService';
 
 export class ControlsBase {
   // @Input() sectionName: string = '';
